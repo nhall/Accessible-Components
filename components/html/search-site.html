@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <title>Search Component</title>
+  </head>
+  <body>
+    <!--
+    Validator will incorrectly throw an error when a role of search is applied
+    to a form element. In the future this should be fixed:
+    https://github.com/validator/validator/issues/193
+    -->
+    <form method="get" action="#" role="search" class="site_search">
+      <div class="site_search_block">
+        <label for="site_search_input" class="visually_hidden site_search_label">Search this site for:</label>
+        <input id="site_search_input" name="site_search_input" type="text" value="" placeholder="Search" required aria-required="true" class="site_search_input">
+        <button type="submit" title="Query search" aria-label="Query search" class="site_search_button"></button>
+      </div>
+    </form>
+  </body>
+</html>
