@@ -1,0 +1,14 @@
+{
+  "name": "accessible-components",
+  "version": "0.0.1",
+  "description": "Markup library for accessible HTML components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhall/Accessible-Components.git"
+  },
+  "author": "Nick Hall",
+  "bugs": {
+    "url": "https://github.com/nhall/Accessible-Components/issues"
+  },
+  "homepage": "https://github.com/nhall/Accessible-Components#readme"
+}
