@@ -1,0 +1,10 @@
+//
+  Validator will incorrectly throw an error when a role of search is applied
+  to a form element. In the future thus should be fixed:
+  https://github.com/validator/validator/issues/193
+
+form.site_search(method='get', action='#', role='search')
+    fieldset.site_search_fieldset
+        label.visually_hidden.site_search_label(for='site_search_input') Search this site for:
+        input#site_search_input.site_search_input(name='site_search_input', type='text', value='', placeholder='Search')
+        button(aria-label='Query search')
