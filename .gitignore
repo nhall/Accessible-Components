@@ -3,6 +3,7 @@
 node_cache/
 node_modules/
 bower_components/
+reports/
 
 # Text Editor preferences
 *.sublime-project
