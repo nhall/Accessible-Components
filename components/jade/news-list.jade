@@ -6,11 +6,11 @@ html.no-js(lang='en')
 
 		section.news_list(role='list')
 			h1.news_list_heading News List Heading
-			article.news_list_item(role='listitem')
+			article.news_list_item(role='listitem', itemscope, itemtype='http://schema.org/NewsArticle')
 				header.news_list_item_header
-					h2.news_list_item_heading News Article Title
+					h2.news_list_item_heading(itemprop='headline') News Article Title
 				div.news_list_item_body
-					figure.news_list_item_figure
+					figure.news_list_item_figure(itemprop='image')
 						picture.news_list_item_picture
 							<!--[if IE 9]>
 							<video style="display: none;">
@@ -20,7 +20,10 @@ html.no-js(lang='en')
 							</video>
 							<![endif]-->
 							img.news_list_item_img(src='http://spacehold.it/80x80/1', alt='')
-					div.news_list_item_content
+					div.news_list_item_content(itemprop='description')
 						p Lorem
 				footer.news_list_item_footer
-					a(class='news_list_item_more', href='#') Read More
+					a.news_list_item_more(href='#', itemprop='url') Read More
+
+
+
