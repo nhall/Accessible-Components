@@ -51,7 +51,10 @@ module.exports = function(grunt) {
 				},
 				files: [{
 					cwd: "components/jade",
-					src: "**/*.jade",
+					src: [
+						"**/*.jade",
+						"!**/_*.jade"
+					],
 					dest: "components/html",
 					expand: true,
 					ext: ".html"
@@ -118,7 +121,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', 'build');
 
 	// Build
-	grunt.registerTask('build', [ 'clean', 'jade', 'includeSource', 'accessibility' ]);
+	grunt.registerTask('build', ['clean', 'jade', 'includeSource', 'accessibility' ]);
 
 	// Develop
 	grunt.registerTask('devel', ['browserSync', 'watch']);

@@ -1,8 +1,9 @@
-doctype html
-html.no-js(lang='en')
-	head
-		title News List Component
-	body
+extends ./_layout.jade
+
+block title
+	title News List Component
+
+block content
 
 		section.news_list(role='list')
 			h1.news_list_heading News List Heading
@@ -24,6 +25,3 @@ html.no-js(lang='en')
 						p Lorem
 				footer.news_list_item_footer
 					a.news_list_item_more(href='#', itemprop='url') Read More
-
-
-

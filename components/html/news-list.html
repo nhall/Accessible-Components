@@ -6,12 +6,12 @@
   <body>
     <section role="list" class="news_list">
       <h1 class="news_list_heading">News List Heading</h1>
-      <article role="listitem" class="news_list_item">
+      <article role="listitem" itemscope itemtype="http://schema.org/NewsArticle" class="news_list_item">
         <header class="news_list_item_header">
-          <h2 class="news_list_item_heading">News Article Title</h2>
+          <h2 itemprop="headline" class="news_list_item_heading">News Article Title</h2>
         </header>
         <div class="news_list_item_body">
-          <figure class="news_list_item_figure">
+          <figure itemprop="image" class="news_list_item_figure">
             <picture class="news_list_item_picture">
               <!--[if IE 9]>
               <video style="display: none;">
@@ -21,11 +21,11 @@
               <![endif]--><img src="http://spacehold.it/80x80/1" alt="" class="news_list_item_img">
             </picture>
           </figure>
-          <div class="news_list_item_content">
+          <div itemprop="description" class="news_list_item_content">
             <p>Lorem</p>
           </div>
         </div>
-        <footer class="news_list_item_footer"><a href="#" class="news_list_item_more">Read More</a></footer>
+        <footer class="news_list_item_footer"><a href="#" itemprop="url" class="news_list_item_more">Read More</a></footer>
       </article>
     </section>
   </body>
