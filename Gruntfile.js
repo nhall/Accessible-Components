@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 					cwd: "components/jade",
 					src: [
 						"**/*.jade",
-						"!**/_*.jade"
+						"!_**/*.jade"
 					],
 					dest: "components/html",
 					expand: true,

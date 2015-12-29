@@ -4,29 +4,37 @@
     <title>News List Component</title>
   </head>
   <body>
-    <section role="list" class="news_list">
-      <h1 class="news_list_heading">News List Heading</h1>
-      <article role="listitem" itemscope itemtype="http://schema.org/NewsArticle" class="news_list_item">
-        <header class="news_list_item_header">
-          <h2 itemprop="headline" class="news_list_item_heading">News Article Title</h2>
-        </header>
-        <div class="news_list_item_body">
-          <figure itemprop="image" class="news_list_item_figure">
-            <picture class="news_list_item_picture">
-              <!--[if IE 9]>
-              <video style="display: none;">
-              <![endif]-->
-              <source media="(min-width: 980px)" srcset="http://spacehold.it/174x116/1"><!--[if IE 9]>
-              </video>
-              <![endif]--><img src="http://spacehold.it/80x80/1" alt="" class="news_list_item_img">
-            </picture>
-          </figure>
-          <div itemprop="description" class="news_list_item_content">
-            <p>Lorem</p>
+    <section class="news_list">
+      <header class="news_list_header">
+        <h1 class="news_list_heading">News List Heading</h1>
+      </header>
+      <div role="list" class="news_list_content">
+        <article role="listitem" itemscope itemtype="http://schema.org/NewsArticle" class="news_list_item">
+          <header class="news_list_item_header">
+            <h2 itemprop="headline" class="news_list_item_heading">News Article Title</h2>
+            <div itemprop="author" class="news_list_item_author">Author</div>
+            <div class="news_list_item_publish">
+              <time itemprop="datePublished" datetime="2015-12-28" class="news_list_item_publish_time">December 28, 2015</time>
+            </div>
+          </header>
+          <div class="news_list_item_body">
+            <figure class="news_list_item_figure">
+              <picture class="news_list_item_picture">
+                <!--[if IE 9]>
+                <video style="display: none;">
+                <![endif]-->
+                <source media="(min-width: 980px)" srcset="http://spacehold.it/174x116/1"><!--[if IE 9]>
+                </video>
+                <![endif]--><img src="http://spacehold.it/80x80/1" alt="" itemprop="image" class="news_list_item_img">
+              </picture>
+            </figure>
+            <div itemprop="description" class="news_list_item_content">
+              <p>Lorem</p>
+            </div>
           </div>
-        </div>
-        <footer class="news_list_item_footer"><a href="#" itemprop="url" class="news_list_item_more">Read More</a></footer>
-      </article>
+          <footer class="news_list_item_footer"><a href="#" itemprop="url" class="news_list_item_more">Read More</a></footer>
+        </article>
+      </div>
     </section>
   </body>
 </html>
