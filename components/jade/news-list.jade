@@ -6,8 +6,10 @@ block title
 
 block content
 
-		section.news_list
-			header.news_list_header
-				h1.news_list_heading News List Heading
-			div.news_list_content(role='list')
-				include ./_includes/_news_list_article.jade
+	section.news_list
+		header.news_list_header
+			h1.news_list_heading News List Heading
+		div.news_list_content(role='list')
+			+newsListArticle('Lorem ipsum dolor sit amet', 'Adam Drake', '2015-12-28', 'December 28, 2015', '1', 'Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.', 'Read More')
+			+newsListArticle('Aenean imperdiet', 'Jessica H. Lloyd', '2015-20-28', 'December 20, 2015', '2', ' Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.', 'Read More')
+			+newsListArticle('Maecenas nec odio et ante', 'Jessica King', '2015-12-28', 'December 20, 2015', '3', 'Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.', 'Read More')

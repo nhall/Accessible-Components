@@ -1,21 +1,22 @@
-article.news_list_item(role='listitem', itemscope, itemtype='http://schema.org/NewsArticle')
-	header.news_list_item_header
-		h2.news_list_item_heading(itemprop='headline') News Article Title
-		div.news_list_item_author(itemprop='author') Author
-		div.news_list_item_publish
-			time.news_list_item_publish_time(itemprop='datePublished', datetime="2015-12-28") December 28, 2015
-	div.news_list_item_body
-		figure.news_list_item_figure
-			picture.news_list_item_picture
-				<!--[if IE 9]>
-				<video style="display: none;">
-				<![endif]-->
-				source(media='(min-width: 980px)', srcset='http://spacehold.it/174x116/1')
-				<!--[if IE 9]>
-				</video>
-				<![endif]-->
-				img.news_list_item_img(src='http://spacehold.it/80x80/1', alt='', itemprop='image')
-		div.news_list_item_content(itemprop='description')
-			p Lorem
-	footer.news_list_item_footer
-		a.news_list_item_more(href='#', itemprop='url') Read More
+mixin newsListArticle(title, author, dateTime, publishDate, img, description, readMoreText)
+	article.news_list_item(role='listitem', itemscope, itemtype='http://schema.org/NewsArticle')
+		header.news_list_item_header
+			h2.news_list_item_heading(itemprop='headline') #{title}
+			.news_list_item_author(itemprop='author') #{author}
+			.news_list_item_publish
+				time.news_list_item_publish_time(itemprop='datePublished', datetime="#{dateTime}") #{publishDate}
+		.news_list_item_body
+			figure.news_list_item_figure
+				picture.news_list_item_picture
+					<!--[if IE 9]>
+					<video style="display: none;">
+					<![endif]-->
+					source(media='(min-width: 980px)', srcset='http://spacehold.it/174x116/#{img}')
+					<!--[if IE 9]>
+					</video>
+					<![endif]-->
+					img.news_list_item_img(src='http://spacehold.it/80x80/#{img}', alt='', itemprop='image')
+			.news_list_item_content(itemprop='description')
+				p #{description}
+		footer.news_list_item_footer
+			a.news_list_item_more(href='#', itemprop='url') #{readMoreText}

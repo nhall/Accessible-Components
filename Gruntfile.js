@@ -124,6 +124,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', ['clean', 'jade', 'includeSource', 'accessibility' ]);
 
 	// Develop
-	grunt.registerTask('devel', ['browserSync', 'watch']);
+	grunt.registerTask('devel', ['build', 'browserSync', 'watch']);
 
 };
