@@ -3,5 +3,8 @@ html.no-js(lang='en')
 	head
 		block title
 			title Layout Template
+		script document.createElement( "picture" );
+		script(src='../../bower_components/picturefill/dist/picturefill.min.js', async)
+		link(rel="stylesheet", href='../../bower_components/normalize-css/normalize.css')
 	body
 		block content

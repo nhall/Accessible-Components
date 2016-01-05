@@ -2,6 +2,9 @@
 <html lang="en" class="no-js">
   <head>
     <title>Search Component</title>
+    <script>document.createElement( "picture" );</script>
+    <script src="../../bower_components/picturefill/dist/picturefill.min.js" async></script>
+    <link rel="stylesheet" href="../../bower_components/normalize-css/normalize.css">
   </head>
   <body>
     <!--
@@ -13,7 +16,7 @@
       <div class="site_search_block">
         <label for="site_search_input" class="visually_hidden site_search_label">Search this site for:</label>
         <input id="site_search_input" name="site_search_input" type="text" value="" placeholder="Search" required aria-required="true" class="site_search_input">
-        <button type="submit" title="Query search" aria-label="Query search" class="site_search_button"></button>
+        <button type="submit" title="Submit search" aria-label="Submit search" class="site_search_button"></button>
       </div>
     </form>
   </body>

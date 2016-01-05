@@ -1,0 +1,9 @@
+{
+  "name": "Acessibile Components",
+  "version": "0.0.1",
+  "devDependencies": {
+    "normalize-css": "~3.0.3",
+    "picturefill": "~3.0.1",
+    "html5shiv": "~3.7.3"
+  }
+}
