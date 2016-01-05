@@ -2,9 +2,13 @@ mixin newsListArticle(title, author, dateTime, publishDate, img, description, re
 	article.news_list_item(role='listitem', itemscope, itemtype='http://schema.org/NewsArticle')
 		header.news_list_item_header
 			h2.news_list_item_heading(itemprop='headline') #{title}
-			.news_list_item_author(itemprop='author') #{author}
+			.news_list_item_author(itemprop='author')
+				span.visually_hidden By
+				span #{author}
 			.news_list_item_publish
-				time.news_list_item_publish_time(itemprop='datePublished', datetime="#{dateTime}") #{publishDate}
+				time.news_list_item_publish_time(itemprop='datePublished', datetime="#{dateTime}")
+					span.visually_hidden Published on
+					span #{publishDate}
 		.news_list_item_body
 			figure.news_list_item_figure
 				picture.news_list_item_picture
